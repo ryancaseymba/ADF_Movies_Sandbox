@@ -1,0 +1,23 @@
+{
+	"name": "name_basics_tsv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "IMDb Movies _name_basics",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "https://datasets.imdbws.com/name.basics.tsv.gz"
+			},
+			"columnDelimiter": "\t",
+			"compressionCodec": "gzip",
+			"compressionLevel": "Fastest",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
