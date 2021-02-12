@@ -1,0 +1,13 @@
+{
+	"name": "IMDb Movies _name_basics",
+	"properties": {
+		"description": "IMDb Movies Partial Database Updated Daily",
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://datasets.imdbws.com/name.basics.tsv.gz",
+			"enableServerCertificateValidation": false,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
