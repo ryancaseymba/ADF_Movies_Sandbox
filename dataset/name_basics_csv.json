@@ -18,23 +18,6 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "\u001f�\b\bR.%`\u0000\u0003data.tsv\u0000�[�n#Ir}.\u0005���^T�3\u001f�&�}�v���\u0001\f",
-				"type": "String"
-			},
-			{
-				"name": "��j� �J.����������1�Ȍ�*RdS^",
-				"type": "String"
-			},
-			{
-				"name": "0�",
-				"type": "String"
-			},
-			{
-				"name": "6�2.'Ή\f�WC��T�cw׌������ލ����f��mÿ��<\u000e?���\u001b��\u001f\u001e��a��mV��_��:�GTgc�\\�\\o�nl+�C�D�Z\u000f�~�\u0019���\u0017��f\u0018_�u�v�j�vخ�ͦ��T�A��\u0012ʥ_�\u0016!�R8F\u0015;���lǶ_�j���",
-				"type": "String"
-			}
-		]
+		"schema": []
 	}
 }
