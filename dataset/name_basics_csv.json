@@ -11,7 +11,10 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": "name.basics.csv",
-				"folderPath": "csv",
+				"folderPath": {
+					"value": "\"@concat('csv/',formatDateTime(utcnow(), ‘yyyy’),'/',formatDateTime(utcnow(), ‘MM’),'/' formatDateTime(utcnow(), ‘dd’),'/',formatDateTime(utcnow(), ‘HH’),'/',formatDateTime(utcnow(), ‘mm’),'/',formatDateTime(utcnow(), ‘ss’))\"",
+					"type": "Expression"
+				},
 				"container": "movies"
 			},
 			"columnDelimiter": ",",
