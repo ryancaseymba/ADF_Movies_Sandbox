@@ -9,8 +9,7 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation",
-				"relativeUrl": "https://datasets.imdbws.com/name.basics.tsv.gz"
+				"type": "HttpServerLocation"
 			},
 			"columnDelimiter": "\t",
 			"compressionCodec": "gzip",
