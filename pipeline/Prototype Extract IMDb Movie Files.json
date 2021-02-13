@@ -5,7 +5,14 @@
 			{
 				"name": "Copy name_basics",
 				"type": "Copy",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Set Pipeline Trigger Time",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
@@ -28,7 +35,7 @@
 					"sink": {
 						"type": "DelimitedTextSink",
 						"storeSettings": {
-							"type": "AzureBlobStorageWriteSettings"
+							"type": "AzureBlobFSWriteSettings"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
@@ -58,8 +65,23 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Set Pipeline Trigger Time",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "ScheduledTime",
+					"value": "@pipeline().TriggerTime"
+				}
 			}
 		],
+		"variables": {
+			"ScheduledTime": {
+				"type": "String"
+			}
+		},
 		"folder": {
 			"name": "Pipeline Activity"
 		},

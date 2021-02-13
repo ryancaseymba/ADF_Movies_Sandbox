@@ -5,6 +5,12 @@
 			"referenceName": "lake4learningsandbox",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"ScheduledTime": {
+				"type": "string",
+				"defaultValue": "@variables('ScheduledTime')"
+			}
+		},
 		"folder": {
 			"name": "Target"
 		},
@@ -15,7 +21,7 @@
 				"type": "AzureBlobFSLocation",
 				"fileName": "name.basics.csv",
 				"folderPath": {
-					"value": "@concat('csv/',formatDateTime(utcnow(), 'yyyy'),'/',formatDateTime(utcnow(), 'MM'),'/', formatDateTime(utcnow(), 'dd'),'/',formatDateTime(utcnow(), 'HH'),'/',formatDateTime(utcnow(), 'mm'),'/',formatDateTime(utcnow(), 'ss'))",
+					"value": "@concat('csv/',formatDateTime(dataset().ScheduledTime, 'yyyy'),'/',formatDateTime(dataset().ScheduledTime, 'MM'),'/',formatDateTime(dataset().ScheduledTime, 'dd'),'/',formatDateTime(dataset().ScheduledTime, 'HH'),'/',formatDateTime(dataset().ScheduledTime, 'mm'),'/',formatDateTime(dataset().ScheduledTime, 'ss'))",
 					"type": "Expression"
 				},
 				"fileSystem": "imdb-data"
