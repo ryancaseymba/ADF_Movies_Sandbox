@@ -1,0 +1,8 @@
+“@concat (‘FileName_’ , formatDateTime(utcnow(), ‘yyyy’), formatDateTime(utcnow(), ‘MM’), formatDateTime(utcnow(), ‘dd’), ‘_’, formatDateTime(utcnow(), ‘HH’),formatDateTime(utcnow(), ‘mm’), formatDateTime(utcnow(), ‘ss’))”
+
+
+
+@concat('csv/',formatDateTime(utcnow(), 'yyyy'),'/',formatDateTime(utcnow(), 'MM'),'/', formatDateTime(utcnow(), 'dd'),'/',formatDateTime(utcnow(), 'HH'),'/',formatDateTime(utcnow(), 'mm'),'/',formatDateTime(utcnow(), 'ss'))
+
+
+@formatDateTime(convertTimeZone(utcnow(),’UTC’,’Hawaiian Standard Time’),’yyyy-MM-dd’)
