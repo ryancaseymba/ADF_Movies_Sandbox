@@ -5,6 +5,9 @@
 			"referenceName": "lake4learningsandbox",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "Target"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

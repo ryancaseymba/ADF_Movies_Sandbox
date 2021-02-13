@@ -5,6 +5,9 @@
 			"referenceName": "IMDb Movies _name_basics",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "Source"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
