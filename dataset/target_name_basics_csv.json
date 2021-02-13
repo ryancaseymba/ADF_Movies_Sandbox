@@ -15,7 +15,7 @@
 					"value": "@concat('csv/',formatDateTime(utcnow(), 'yyyy'),'/',formatDateTime(utcnow(), 'MM'),'/', formatDateTime(utcnow(), 'dd'),'/',formatDateTime(utcnow(), 'HH'),'/',formatDateTime(utcnow(), 'mm'),'/',formatDateTime(utcnow(), 'ss'))",
 					"type": "Expression"
 				},
-				"fileSystem": "movies"
+				"fileSystem": "imdb-data"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
