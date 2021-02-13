@@ -48,13 +48,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "name_basics_tsv",
+						"referenceName": "source_name_basics_tsv",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "name_basics_csv",
+						"referenceName": "target_name_basics_csv",
 						"type": "DatasetReference"
 					}
 				]

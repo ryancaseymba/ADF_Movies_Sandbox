@@ -1,5 +1,5 @@
 {
-	"name": "name_basics_csv",
+	"name": "target_name_basics_csv",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "lake4learningsandbox",

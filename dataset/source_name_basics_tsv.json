@@ -1,5 +1,5 @@
 {
-	"name": "name_basics_tsv",
+	"name": "source_name_basics_tsv",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "IMDb Movies _name_basics",
