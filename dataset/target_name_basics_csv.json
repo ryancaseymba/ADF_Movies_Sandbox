@@ -21,7 +21,7 @@
 				"type": "AzureBlobFSLocation",
 				"fileName": "name.basics.csv",
 				"folderPath": {
-					"value": "@concat('csv/',formatDateTime(dataset().ScheduledTime, 'yyyy'),'/',formatDateTime(dataset().ScheduledTime, 'MM'),'/',formatDateTime(dataset().ScheduledTime, 'dd'),'/',\nformatDateTime(convertTimeZone(dataset().ScheduledTime,'UTC','Central Standard Time'), 'HH'),'/',formatDateTime(dataset().ScheduledTime, 'mm'),'/',formatDateTime(dataset().ScheduledTime, 'ss'))",
+					"value": "@concat('csv/',formatDateTime(dataset().ScheduledTime, 'yyyy'),'/',formatDateTime(dataset().ScheduledTime, 'MM'),'/',formatDateTime(dataset().ScheduledTime, 'dd'),'/',formatDateTime(dataset().ScheduledTime, 'HH'),'/',formatDateTime(dataset().ScheduledTime, 'mm'),'/',formatDateTime(dataset().ScheduledTime, 'ss'))",
 					"type": "Expression"
 				},
 				"fileSystem": "imdb-data"
